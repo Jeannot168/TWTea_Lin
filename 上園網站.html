@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上園茶莊 | 林鼎洲老師創立的專業茶莊</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>上園茶莊</h1>
+                    <p class="logo-subtitle">Shangyuan Tea House</p>
+                </div>
+                <nav class="nav">
+                    <a href="#home" data-nav="home">首頁</a>
+                    <a href="#products" data-nav="products">商品</a>
+                    <a href="#about" data-nav="about">關於上園</a>
+                    <a href="#brewing" data-nav="brewing">泡茶方法</a>
+                    <a href="#contact" data-nav="contact">聯絡我們</a>
+                </nav>
+                <div class="header-actions">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="zh">中文</button>
+                        <button class="lang-btn" data-lang="ja">日本語</button>
+                    </div>
+                    <button class="cart-btn" id="cartBtn">
+                        <span data-nav="cart">購物車</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title" data-hero="title">上園茶莊</h2>
+                <p class="hero-subtitle" data-hero="subtitle">品味來自福爾摩沙的天然好茶</p>
+                <p class="hero-description" data-hero="description">林鼎洲老師創立的上園茶莊，深入研究茶葉品種、培育條件與製茶工藝。每一片茶葉都承載著台灣的自然風土與專業茶學的精髓。</p>
+                <div class="hero-credentials">
+                    <span class="credential-item">師承製茶大師 陳德意、陳阿蹺</span>
+                    <span class="credential-separator">•</span>
+                    <span class="credential-item">茶學專家</span>
+                    <span class="credential-separator">•</span>
+                    <span class="credential-item">學術理論與實務並重</span>
+                </div>
+                <button class="btn btn--primary btn--lg" data-hero="cta">立即選購</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="category-filter" id="products">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">全部商品</button>
+                <button class="filter-btn" data-filter="high_mountain" data-nav="high_mountain">高山茶</button>
+                <button class="filter-btn" data-filter="black_tea" data-nav="black_tea">紅茶</button>
+                <button class="filter-btn" data-filter="oolong" data-nav="oolong">烏龍茶</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 data-about="title">關於上園茶莊</h2>
+                <div class="master-profile">
+                    <div class="master-info">
+                        <h3>茶學專家 林鼎洲老師</h3>
+                        <p class="master-lineage">師承製茶大師 陳德意、陳阿蹺</p>
+                    </div>
+                </div>
+                <p data-about="content">上園茶莊由茶學專家林鼎洲老師在台北市創立，是一家以學術理論為基礎深入研究茶葉品種、培育條件、加工及烘焙技術的專業茶莊。林鼎洲老師拜師於製茶大師陳德意、陳阿蹺，精研選茶與烘焙技術，並具備深厚的佛學造詣。</p>
+                <p data-about="story">林鼎洲老師不僅對茶葉知識有深入理解，也致力於以實務方式推廣簡易而能享受美味台灣茶的沖泡法。他強調使用小茶壺、適量茶葉與高溫熱水，才能充分釋放高山茶、烏龍茶的風味，並鼓勵依個人口味靈活調整步驟，體會泡茶的樂趣。上園茶莊秉承專業與傳統，為愛茶人士提供最優質的台灣茶葉。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tea Brewing Methods Section -->
+    <section class="brewing-methods" id="brewing">
+        <div class="container">
+            <div class="brewing-content">
+                <h2 data-brewing="title">如何泡出一壺好茶？</h2>
+                <p class="brewing-subtitle" data-brewing="subtitle">林鼎洲老師傳授的享茶訣竅</p>
+                <div class="brewing-steps" id="brewingSteps">
+                    <!-- Brewing steps will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid" id="featuresGrid">
+                <!-- Features will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 data-contact="title">聯絡我們</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3 data-contact="contact_person">林小姐</h3>
+                        <p class="contact-phone" data-contact="phone">(886) 989-866-928</p>
+                    </div>
+                    <div class="contact-item">
+                        <p data-contact="address">台北市</p>
+                        <p data-contact="business_hours">週一至週六 09:00-18:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>上園茶莊</h3>
+                    <p>林鼎洲老師創立的專業茶莊</p>
+                    <p>師承製茶大師 陳德意、陳阿蹺</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-nav="contact">聯絡我們</h4>
+                    <p>聯絡人：林小姐</p>
+                    <p>電話：(886) 989-866-928</p>
+                    <p>地址：台北市</p>
+                </div>
+                <div class="footer-section">
+                    <h4>專業服務</h4>
+                    <p>茶葉品種研究</p>
+                    <p>製茶工藝指導</p>
+                    <p>泡茶方法教學</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Detail Modal -->
+    <div class="modal hidden" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Product details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar hidden" id="cartSidebar">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3 data-nav="cart">購物車</h3>
+                <button class="cart-close" id="cartClose">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>總計: NT$ <span id="cartTotal">0</span></span>
+                </div>
+                <button class="btn btn--primary btn--full-width">結帳</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
